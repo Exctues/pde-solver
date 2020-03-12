@@ -16,7 +16,7 @@ let _NT = 10 (* number of time steps *)
 
 
 (* Boundary and initial condition definition *)
-let boundary_condition x y t = 1.0
+let boundary_condition x y t = if x > y then 1.0 else 0.0
 let initial_condition x y = 1.0
 
 let sol  = Array.make_matrix _NX _NT 
