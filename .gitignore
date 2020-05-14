@@ -11,6 +11,8 @@
 test.o
 test.out
 test.ml
+*.pdf
+*.zip
 
 # ocamlbuild working directory
 _build/

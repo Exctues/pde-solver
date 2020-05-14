@@ -3,9 +3,6 @@ open Owl;;
 
 let e = 2.7182818284;;
 
-(* Boundary and initial condition definition *)
-let boundary_condition x y t = if x > y then 1. else 0.;;
-
 let initial_condition is_call (s: float)  (k: float)  =
    if is_call then max (s -. k) 0.
     else max (k -. s) 0.;;
